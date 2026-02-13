@@ -31,7 +31,9 @@ const funnyTexts = [
   "Non",
   "Sûr(e) ?",
   "Vraiment ?",
+  "Pense a mini cochon !!",
   "🥺",
+  "Non tu ne peut pas dire ça",
   "Réfléchis...",
   "Non non...",
   "😢",
@@ -77,13 +79,11 @@ function fleeButton() {
   // Move to random position
   const pos = getRandomPosition();
 
-  // After a few attempts, use fixed positioning to escape the button container
-  if (fleeCount >= 2) {
-    btnNon.style.position = "fixed";
-    btnNon.style.left = pos.x + "px";
-    btnNon.style.top = pos.y + "px";
-    btnNon.style.zIndex = "999";
-  }
+  // Use fixed positioning to escape the button container
+  btnNon.style.position = "fixed";
+  btnNon.style.left = pos.x + "px";
+  btnNon.style.top = pos.y + "px";
+  btnNon.style.zIndex = "999";
 
   setTimeout(() => {
     isMoving = false;
