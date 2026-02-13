@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💕 Pour toi, mon Amour</title>
+    <meta
+      name="description"
+      content="Une question très importante pour la Saint-Valentin..."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Page 1: La question -->
+    <div id="question-page" class="page active">
+      <div class="floating-hearts" aria-hidden="true"></div>
+      <div class="content">
+        <div class="heart-icon pulse">❤️</div>
+        <h1 class="title">Pour toi, mon Amour</h1>
+        <p class="subtitle">J'ai une question très importante à te poser...</p>
+        <h2 class="question">Veux-tu être ma Valentine ?</h2>
+        <div class="buttons">
+          <button id="btn-oui" class="btn btn-oui" onclick="sayYes()">
+            OUI !
+          </button>
+          <button id="btn-non" class="btn btn-non">Non</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Page 2: La célébration -->
+    <div id="celebration-page" class="page">
+      <canvas id="confetti-canvas"></canvas>
+      <div class="content celebration-content">
+        <div class="heart-icon heart-celebrate">💖</div>
+        <h1 class="title celebration-title">Je le savais !</h1>
+        <h2 class="celebration-subtitle">Rendez-vous le 14 Février !</h2>
+        <p class="love-text">Je t'aime. ❤️</p>
+        <div class="sparkles" aria-hidden="true">
+          <span>✨</span><span>💫</span><span>✨</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="confetti.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
